@@ -20,7 +20,7 @@ module.exports = {
          * The base URL of the WordPress site without the trailingslash and the protocol. This is required.
          * Example : 'demo.wp-api.org' or 'www.example-site.com'
          */
-        baseUrl: "angry-hermann4254.on.getshifter.io",
+        baseUrl: "dtdd.synergistic.space",
         // The protocol. This can be http or https.
         protocol: "https",
         // The rest api route prefix that your WordPress site is using.
@@ -43,12 +43,24 @@ module.exports = {
         perPage: 100,
         // Search and Replace Urls across WordPress content.
          searchAndReplaceContentUrls: {
-           sourceUrl: "https://angry-hermann4254.on.getshifter.io",
+           sourceUrl: "https://dtdd.synergistic.space",
            replacementUrl: "https://localhost:8000",
          },
         includedRoutes: [
+          "**/categories",
           "**/posts",
           "**/pages",
+          "**/media",
+          "**/tags",
+          "**/taxonomies",
+          "**/users",
+          "**/menus",
+          "**/portfolio",
+          "**/services",
+          "**/qualifications",
+          "**/gallery",
+          "**/logo",
+          "**/location",
         ]
       },
     },
